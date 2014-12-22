@@ -29,8 +29,25 @@
 
             {form_hidden_fields form=$form}
 
-            {render_form_field form=$form field='api_key'}
-            {render_form_field form=$form field='username'}
+            {form_field form=$form field='api_key'}
+            <div class="form-group ">
+              <label class="control-label" for="{$label_attr.for}">
+                {$label}
+                <span class="required">*</span>
+              </label>
+              <input id="yo_config-id-api_key" class="form-control " type="text" required="" aria-required="true" value="{$value}" name="{$name}">
+            </div>
+            {/form_field}
+
+            {form_field form=$form field='username'}
+              <div class="form-group ">
+                <label class="control-label" for="{$label_attr.for}">
+                  {$label}
+                  <span class="required">*</span>
+                </label>
+                <input id="yo_config-id-username" class="form-control " type="text" required="" aria-required="true" value="{$value}" name="{$name}">
+              </div>
+            {/form_field}
 
             <button type="submit" id="yo-save" name="yo_save" value="save" class="form-submit-button btn btn-sm btn-default" title="{intl d='yot.ai' l='Save'}">{intl d='yot.ai' l='Save'}</button>
           </form>

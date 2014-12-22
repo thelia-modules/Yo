@@ -29,6 +29,6 @@
     -->
 
     <route id="yo.config.save" path="/admin/module/YoT/save" methods="POST">
-        <default key="_controller">YoT:Config:save</default>
+        <default key="_controller">YoT\Controller\ConfigController::saveAction</default>
     </route>
 </routes>
