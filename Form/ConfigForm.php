@@ -10,13 +10,13 @@
 /*      file that was distributed with this source code.                             */
 /*************************************************************************************/
 
-namespace YoT\Form;
+namespace Yo\Form;
 
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Thelia\Core\Translation\Translator;
 use Thelia\Form\BaseForm;
 use Thelia\Model\ConfigQuery;
-use YoT\YoT;
+use Yo\Yo;
 
 /**
  * Class ConfigForm

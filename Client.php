@@ -10,7 +10,7 @@
 /*      file that was distributed with this source code.                             */
 /*************************************************************************************/
 
-namespace YoT;
+namespace Yo;
 
 use Thelia\Log\Tlog;
 

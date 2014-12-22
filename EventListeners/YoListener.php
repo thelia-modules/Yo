@@ -10,7 +10,7 @@
 /*      file that was distributed with this source code.                             */
 /*************************************************************************************/
 
-namespace YoT\EventListeners;
+namespace Yo\EventListeners;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Routing\Router;
@@ -18,8 +18,8 @@ use Thelia\Core\Event\Order\OrderEvent;
 use Thelia\Core\Event\TheliaEvents;
 use Thelia\Tools\URL;
 use Thelia\Model\ConfigQuery;
-use YoT\Client;
-use YoT\YoT;
+use Yo\Client;
+use Yo\Yo;
 
 /**
  * Class YoListener

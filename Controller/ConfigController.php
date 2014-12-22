@@ -10,7 +10,7 @@
 /*      file that was distributed with this source code.                             */
 /*************************************************************************************/
 
-namespace YoT\Controller;
+namespace Yo\Controller;
 
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Thelia\Controller\Admin\BaseAdminController;
@@ -19,8 +19,8 @@ use Thelia\Core\Security\Resource\AdminResources;
 use Thelia\Form\Exception\FormValidationException;
 use Thelia\Tools\URL;
 use Thelia\Model\ConfigQuery;
-use YoT\Form\ConfigForm;
-use YoT\YoT;
+use Yo\Form\ConfigForm;
+use Yo\Yo;
 
 /**
  * Class ConfigController
@@ -32,7 +32,7 @@ class ConfigController extends BaseAdminController
 
     public function saveAction()
     {
-        if (null !== $response = $this->checkAuth(AdminResources::MODULE, ['yot'], AccessManager::UPDATE)) {
+        if (null !== $response = $this->checkAuth(AdminResources::MODULE, ['yo'], AccessManager::UPDATE)) {
             return $response;
         }
 
@@ -45,7 +45,7 @@ class ConfigController extends BaseAdminController
 
             ConfigQuery::write('yo_api_key', $configForm->get('api_key')->getData(), 1, 1);
             ConfigQuery::write('yo_username', $configForm->get('username')->getData(), 1, 1);
-            $response = RedirectResponse::create(URL::getInstance()->absoluteUrl('/admin/module/YoT'));
+            $response = RedirectResponse::create(URL::getInstance()->absoluteUrl('/admin/module/Yo'));
 
         } catch (FormValidationException $e) {
             $errorMsg = $e->getMessage();
@@ -53,14 +53,14 @@ class ConfigController extends BaseAdminController
 
         if (null !== $error_message) {
             $this->setupFormErrorContext(
-                'YoT config fail',
+                'Yo config fail',
                 $error_message,
                 $form
             );
             $response = $this->render(
                 "module-configure",
                 [
-                    'module_code' => 'YoT'
+                    'module_code' => 'Yo'
                 ]
             );
         }

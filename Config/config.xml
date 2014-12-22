@@ -5,10 +5,10 @@
         xsi:schemaLocation="http://thelia.net/schema/dic/config http://thelia.net/schema/dic/config/thelia-1.0.xsd">
 
     <forms>
-        <form name="yo.config" class="YoT\Form\ConfigForm" />
+        <form name="yo.config" class="Yo\Form\ConfigForm" />
     </forms>
     <services>
-        <service id="yo.subscriber" class="YoT\EventListeners\YoListener">
+        <service id="yo.subscriber" class="Yo\EventListeners\YoListener">
             <argument type="service" id="router.admin" />
             <tag name="kernel.event_subscriber"/>
         </service>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module>
-    <fullnamespace>YoT\YoT</fullnamespace>
+    <fullnamespace>Yo\Yo</fullnamespace>
     <descriptive locale="en_US">
         <title>YoApp for Thelia</title>
         <description>This module can send a Yo when a new order is created</description>

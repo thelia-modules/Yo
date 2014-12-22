@@ -10,11 +10,11 @@
 /*      file that was distributed with this source code.                             */
 /*************************************************************************************/
 
-namespace YoT;
+namespace Yo;
 
 use Thelia\Module\BaseModule;
 
-class YoT extends BaseModule
+class Yo extends BaseModule
 {
     /*
      * You may now override BaseModuleInterface methods, such as:
