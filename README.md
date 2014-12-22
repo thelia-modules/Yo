@@ -10,20 +10,20 @@ This module send a Yo when an order is created. You need to know your Api key an
 
 ## Usage
 
-In the configuration panel of this module, you can record you api key and the username
+In the configuration panel of this module, you can record your Api key and the username
 
 ## How to retrieve my Api Key
 
-You need to connect on this url [http://dev.justyo.co/](http://dev.justyo.co/) and then copy your Api Key
+You need to connect to this url [http://dev.justyo.co/](http://dev.justyo.co/) and then copy your Api Key
 
 ## Client Api
 
-This module comes with a small client Api for Yo webservice, so you can send yo in all Thelia application.
+This module comes with a small client Api for the Yo webservice, you can send a Yo in all your Thelia application.
 
 ### How to use it
 
 ```
-$yo = new \YoT\Client('Your_api_key');
+$yo = new \Yo\Client('Your_api_key');
 
 //send a Yo to user FOO
 $yo->yo('FOO');
