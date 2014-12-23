@@ -4,9 +4,18 @@ This module send a Yo when an order is created. You need to know your Api key an
 
 ## Installation
 
+### Manually
+
 * Copy the module into ```<thelia_root>/local/modules/``` directory and be sure that the name of the module is Yo.
 * Activate it in your thelia administration panel
 
+### Composer
+
+Add it in your main thelia composer.json file
+
+```
+composer require thelia/yo:~1.0
+```
 
 ## Usage
 

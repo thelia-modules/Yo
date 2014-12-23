@@ -1,6 +1,7 @@
 {
   "name": "thelia/yo",
   "type": "thelia-module",
+  "keywords" : ["yo", "swag", "yolo", "thelia"],
   "require": {
     "thelia/installer": "~1.1"
   },
