@@ -37,7 +37,7 @@ class ConfigController extends BaseAdminController
         }
 
         $form = new ConfigForm($this->getRequest());
-        $error_message = null;
+        $errorMessage = null;
         $response = null;
 
         try {
@@ -48,13 +48,13 @@ class ConfigController extends BaseAdminController
             $response = RedirectResponse::create(URL::getInstance()->absoluteUrl('/admin/module/Yo'));
 
         } catch (FormValidationException $e) {
-            $errorMsg = $e->getMessage();
+            $errorMessage = $e->getMessage();
         }
 
-        if (null !== $error_message) {
+        if (null !== $errorMessage) {
             $this->setupFormErrorContext(
                 'Yo config fail',
-                $error_message,
+                $errorMessage,
                 $form
             );
             $response = $this->render(
